@@ -14,7 +14,8 @@ app.use(cookieParser());
 app.use(
     cors({
         origin: [
-            "https://finance-edited-frontend.onrender.com"
+            "https://finance-edited-frontend.onrender.com",
+            'http://localhost:3000',
         ],
         // origin: '*',
         methods: ["POST", "GET", "PUT", "DELETE", "PATCH"],
