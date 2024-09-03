@@ -11,13 +11,13 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({
-    // origin: ['https://finance-tracker-frontend-diit.onrender.com', 'http://localhost:3000'],
-    origin: '*',
-    methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
-    credentials: true
-}));
-// app.use(cors());
+// app.use(cors({
+//     // origin: ['https://finance-tracker-frontend-diit.onrender.com', 'http://localhost:3000'],
+//     origin: '*',
+//     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
+//     credentials: true
+// }));
+app.use(cors());
 app.get("/",(req,res)=>{
   res.setHeader("Access-Control-Allow-Credential","true");
   res.send("Api is running well baby-arijit");
