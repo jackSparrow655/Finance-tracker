@@ -20,7 +20,8 @@ const App = () => {
         <PrimeReactProvider>  
           <Routes>
             <Route exact path="/" element={<AuthPage />}/>
-            <Route exact path="/home" element={<><MySidebar/><Dashboard /></>}/>
+{/*             <Route exact path="/home" element={<><MySidebar/><Dashboard /></>}/> */}
+            <Route exact path="/home" element={<>my name is arijit</>}/>
             <Route exact path="/detail" element={<><MySidebar /><Details/></>}/>
             <Route exact path="/income" element={<><MySidebar /><Incomes/></>}/>
             <Route exact path="/expense" element={<><MySidebar /><Expenses/></>}/>
