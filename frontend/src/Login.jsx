@@ -39,7 +39,7 @@ const Login = () => {
       if (data.email) {
         toast.current.show({severity:'success', summary: 'Logged In !', detail:`Welcome back, ${data.name}`, life: 1000});
         setTimeout(() => {
-          window.location.assign("/home");
+          window.location.replace("/home");
         }, 500);
       }
     } catch (err) {
