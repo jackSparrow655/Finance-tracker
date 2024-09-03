@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: ['https://finance-tracker-frontend-diit.onrender.com', 'http://localhost:3000'],
+    // origin: ['https://finance-tracker-frontend-diit.onrender.com', 'http://localhost:3000'],
+    origin: '*',
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
     credentials: true
 }));
