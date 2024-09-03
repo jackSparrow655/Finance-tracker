@@ -19,7 +19,7 @@ app.use(cors({
 // app.use(cors());
 app.get("/",(req,res)=>{
   res.setHeader("Access-Control-Allow-Credential","true");
-  res.send("Api is running");
+  res.send("Api is running well baby-arijit");
 })
 
 
@@ -35,10 +35,6 @@ app.use("/check",checkRoutes);
 //   res.clearCookie('jwt');
 // });
 
-
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
 app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`)
 });
